@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>WebGL Exposure Fusion local tonemapping</title>
+		<style>
+			body { margin: 0; }
+			#info {
+				position: absolute;
+				color:grey;
+				bottom: 10px;
+				width: 100%;
+				text-align: left;
+				z-index: 100;
+				display:block;
+			}
+		</style>
+	</head>
+	<body>
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://unpkg.com/three@0.138.0/build/three.module.js"
+                }
+            }
+        </script>        
+		<script type="module" src="main.js">
+		</script>
+		<div id="info">
+			Local tonemapping through exposure fusion demo.
+			<br/>
+			Demo/code author: <a href=https://bartwronski.com style="color:wheat">Bart Wronski</a>
+			<br/>
+			HDR EXR credit <a href=https://polyhaven.com/a/veranda style="color:wheat">Greg Zaal</a>
+		</div>
+	</body>
+</html>
