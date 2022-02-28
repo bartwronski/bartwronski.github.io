@@ -1,9 +1,9 @@
-import * as THREE from 'https://unpkg.com/three@0.138.0/build/three.module.js';
+import * as THREE from 'three';
 
-import { EXRLoader } from 'https://unpkg.com/three@0.138.0/examples/jsm/loaders/EXRLoader.js';
-import { GUI } from 'https://unpkg.com/three@0.138.0/examples/jsm/libs/lil-gui.module.min.js';
-import { ShaderPass } from 'https://unpkg.com/three@0.138.0/examples/jsm/postprocessing/ShaderPass.js';
-import { CopyShader } from 'https://unpkg.com/three@0.138.0/examples/jsm/shaders/CopyShader.js';
+import { EXRLoader } from 'three/examples/jsm/loaders/EXRLoader.js';
+import { GUI } from 'three/examples/jsm/libs/lil-gui.module.min.js';
+import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
+import { CopyShader } from 'three/examples/jsm/shaders/CopyShader.js';
 
 const passthroughVS = /* glsl */`
 varying vec2 vUv;
